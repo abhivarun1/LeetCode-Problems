@@ -3,8 +3,6 @@ class Solution:
         a = min(nums)
         b = max(nums)
 
-        while b > 0:
-            temp = b
-            b = a % b
-            a = temp
+        while b:
+            a,b = b,a%b
         return a
