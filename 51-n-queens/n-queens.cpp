@@ -8,7 +8,7 @@ public:
             tempr--;
         }
         tempr = row;
-        while(tempr >= 0 && tempc < n){
+        while(tempr >= 0 && tempc >= 0){
             if(A[tempr][tempc] == 'Q') return false;
             tempr--;
             tempc++;
@@ -43,7 +43,7 @@ public:
             string s;
             for(int j = 0; j < n; j++){
                 s += '.';
-            }
+            }  
             A.push_back(s);
         }
 
